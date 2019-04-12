@@ -1,19 +1,19 @@
 <template lang='pug'>
-v-layout(justify-center)
-    v-flex(lg6)
-        v-card
-            v-tabs(
-                v-model='active' 
-                icons-and-text
-                centered
-            )
-                v-tab(v-for='contact in contacts') {{contact.name}}
-                    v-icon {{contact.icon}}
-            v-tabs-items(v-model='active')
-                v-tab-item(v-for='contact in contacts').text-xs-center.headline
-                    v-card(flat)
-                        v-card-text
-                            template(v-for='part in contact.content') {{part}} #[br]
+// v-layout(justify-center)
+    // v-flex(lg6).red
+        // v-card
+v-tabs(
+    v-model='active' 
+    icons-and-text
+    centered
+)
+    v-tab(v-for='contact in contacts') {{contact.name}}
+        v-icon {{contact.icon}}
+    v-tabs-items(v-model='active')
+        v-tab-item(v-for='contact in contacts').text-xs-center.headline
+            v-card(flat)
+                v-card-text
+                    template(v-for='part in contact.content') {{part}} #[br]
 </template>
 
 <script lang='coffee'>
@@ -22,7 +22,7 @@ class contact
 export default
     data: ->
         contacts: [
-            new contact 'Téléphone', 'phone', ['06 70 13 08 03', '02 32 34 66 56']
+            new contact 'Téléphone', 'phone', ['06 70 13 08 03', '', '02 32 34 66 58']
             new contact 'Mail', 'email', ['camille-giraud@live.fr']
             new contact 'Addresse', 'home', ["11 Rue des Longines", "Écardenville sur Eure", "27490 CLEF Vallée d'Eure"]
         ]
