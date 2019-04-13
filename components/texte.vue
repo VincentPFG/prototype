@@ -1,7 +1,7 @@
 <template lang='pug'>
 v-container.text-xs-justify(grid-list-lg)
     v-layout(wrap)
-        v-flex(v-for='par in texte' lg4)
+        v-flex(v-for='par in texte' lg4 sm6)
             p {{par}}
 
 </template>
