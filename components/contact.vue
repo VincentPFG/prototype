@@ -22,9 +22,9 @@ class contact
 export default
     data: ->
         contacts: [
-            new contact 'Téléphone', 'phone', ['06 70 13 08 03', '', '02 32 34 66 58']
-            new contact 'Mail', 'email', ['camille-giraud@live.fr']
-            new contact 'Addresse', 'home', ["11 Rue des Longines", "Écardenville sur Eure", "27490 CLEF Vallée d'Eure"]
+            new contact 'Téléphone', 'phone', ['06 ** ** ** **', '', '02 ** ** ** **']
+            new contact 'Mail', 'email', ['camille-giraud@***']
+            new contact 'Addresse', 'home', ["11 Rue ***", "*** sur ***", "27*** *** *** d'***"]
         ]
         active: null
 </script>
